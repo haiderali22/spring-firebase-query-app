@@ -29,4 +29,13 @@ public class QueryController
 	                .body(Mono.just(orderService.findByID(id).toProcessor().blockOptional().get()));		 	
 	}
 	
+	@GetMapping(value="simple/query/order/{id}")
+	public ResponseEntity queryOrderByIdSimple(@PathVariable String id)
+	{
+		 return ResponseEntity
+	                .ok()
+	                .contentType(MediaType.APPLICATION_JSON)
+	                .body(orderService.findByIDFireStore(id));		 	
+	}
+	
 }
