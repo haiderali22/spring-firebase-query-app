@@ -1,4 +1,4 @@
-package om.hali.leaning.spring.firebase.model;
+package com.hali.leaning.spring.firebase.model;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package om.hali.leaning.spring.firebase.model;
+package com.hali.leaning.spring.firebase.model;
 
 import com.google.cloud.firestore.annotation.DocumentId;
 import com.google.cloud.firestore.annotation.PropertyName;

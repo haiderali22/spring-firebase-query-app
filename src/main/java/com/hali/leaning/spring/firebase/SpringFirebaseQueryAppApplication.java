@@ -1,4 +1,4 @@
-package om.hali.leaning.spring.firebase;
+package com.hali.leaning.spring.firebase;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

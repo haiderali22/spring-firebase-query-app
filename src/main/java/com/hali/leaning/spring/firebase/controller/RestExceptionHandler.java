@@ -1,4 +1,4 @@
-package om.hali.leaning.spring.firebase.controller;
+package com.hali.leaning.spring.firebase.controller;
 import org.springframework.web.HttpRequestMethodNotSupportedException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;

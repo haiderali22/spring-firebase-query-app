@@ -1,9 +1,12 @@
-package om.hali.leaning.spring.firebase.service;
+package com.hali.leaning.spring.firebase.service;
 
-import om.hali.leaning.spring.firebase.model.Order;
-import om.hali.leaning.spring.firebase.repository.OrderRepository;
+import org.springframework.stereotype.Service;
+
+import com.hali.leaning.spring.firebase.model.Order;
+import com.hali.leaning.spring.firebase.repository.OrderRepository;
 import reactor.core.publisher.Mono;
 
+@Service
 public class OrderService 
 {
 	OrderRepository orderRepository;
