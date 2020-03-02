@@ -1,5 +1,6 @@
 package com.hali.leaning.spring.firebase.model;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import com.google.cloud.firestore.annotation.DocumentId;
 import com.google.cloud.firestore.annotation.PropertyName;
 
@@ -14,8 +15,28 @@ public class LocationHistory
 	@DocumentId
 	private String id;
 	
+	private String signalStrength;
+	private Boolean gpsStatus;
+	private String accuracy;
+	private String deviceModel;
+	
+	@JsonProperty("long")
+	private String longitude;
 	private String lat;
+	private String deviceOSVersion;
+	private String deviceBrand;
+	private String batteryLevel;
+	private Boolean chargingState;
+	private String timestamp;	
+
 	
 	@PropertyName("long")
-	private String longitude;
+	public String getLongitude() {
+		return longitude;
+	}
+	
+	@PropertyName("long")
+	public void setLongitude(String longitude) {
+		this.longitude = longitude;
+	}	
 }
